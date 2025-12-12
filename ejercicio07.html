@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 7: Fondo y Color</title>
+  <style>
+    /* Cambiar fondo de la página */
+    body {
+      /* Puedes usar un color simple */
+      background-color: #f0f8ff; /* AliceBlue */
+
+      /* O un degradado (shorthand background) */
+      /* background: linear-gradient(to bottom, #ffccff, #ccffff); */
+
+      /* O una imagen de fondo */
+      /* background: url('ruta-de-tu-imagen.jpg') no-repeat center center; */
+      /* background-size: cover; */
+      
+      /* Color del texto */
+      color: #333333;  /* gris oscuro para que contraste con el fondo claro */
+      font-family: Arial, sans-serif;
+    }
+
+    /* Estilos para los encabezados para que cada uno se distinga con color */
+    h1 {
+      color: darkblue;
+    }
+    h2 {
+      color: darkgreen;
+    }
+    h3 {
+      color: darkred;
+    }
+
+    /* Una clase de párrafo con diferente color */
+    .parrafo-destacado {
+      color: #800080; /* púrpura */
+      background-color: #f5f5dc; /* beige claro */
+      padding: 10px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Encabezado Principal</h1>
+
+  <p>Este es un párrafo normal con el color de texto que definimos para todo el body.</p>
+
+  <h2>Encabezado Secundario</h2>
+  <p class="parrafo-destacado">
+    Este párrafo tiene un color distinto por su clase, y también un fondo diferente.
+  </p>
+
+  <h3>Un tercer encabezado</h3>
+  <p>Otro párrafo de prueba para ver cómo quedan los estilos con la nueva configuración de fondo y color.</p>
+</body>
+</html>
