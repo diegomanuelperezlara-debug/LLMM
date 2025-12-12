@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web4U: Recurso bilingüe sobre HTML, SVG y CSS para IES La Marisma.">
+    <meta name="author" content="Tu Nombre">
+    <title>Web4U - Learning Markup Languages</title>
+    
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e67e22;
+            --light: #f4f4f4;
+            --dark: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            background: var(--primary);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        nav a:hover { background: var(--secondary); }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://picsum.photos/1200/400?grayscale&blur=2');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        section { padding: 60px 0; border-bottom: 1px solid #ddd; }
+
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            border-left: 5px solid var(--accent);
+        }
+
+        .example-box {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .thumbnail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .lang-badge {
+            background: #e74c3c;
+            color: white;
+            padding: 2px 6px;
+            font-size: 0.8rem;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        .btn-pdf {
+            display: inline-block;
+            background: #d35400;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        img.browser-result {
+            max-width: 100%;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home" title="Go to Home / Ir al Inicio">Home</a>
+        <a href="#html" title="HTML Documentation / Documentación HTML">HTML</a>
+        <a href="#svg" title="SVG Documentation / Documentación SVG">SVG</a>
+        <a href="#css" title="CSS Documentation / Documentación CSS">CSS</a>
+    </nav>
+
+    <header id="home">
+        <h1>Web4U</h1>
+        <p>Your portal for HTML, SVG & CSS / Tu portal de HTML, SVG y CSS</p>
+        <p>1st Quarter 2025/26 - IES La Marisma</p>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2>Explore Languages / Explorar Lenguajes</h2>
+            <div class="thumbnail-grid">
+                <a href="#html" title="Jump to HTML section">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 Logo" width="100"><br>HTML5
+                </a>
+                <a href="#svg" title="Jump to SVG section">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Bitmap_VS_SVG_example.svg" alt="SVG Logo" width="100"><br>SVG Graphics
+                </a>
+                <a href="#css" title="Jump to CSS section">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3 Logo" width="100"><br>CSS3
+                </a>
+            </div>
+        </section>
+
+        <section id="html">
+            <span class="lang-badge">Bilingual</span>
+            <h2>HTML5 Fundamentals / Fundamentos de HTML5</h2>
+            
+            <div class="toc">
+                <h3>Contents / Contenidos</h3>
+                <ul>
+                    <li><a href="#html-div" title="Section: div tag">1. &lt;div&gt; tag</a></li>
+                    <li><a href="#html-a" title="Section: anchor tag">2. &lt;a&gt; tag</a></li>
+                    </ul>
+            </div>
+
+            <div id="html-div" class="example-box">
+                <h3>The &lt;div&gt; element</h3>
+                <p><strong>Use Case:</strong> A generic container for flow content / Contenedor genérico para contenido en bloque.</p>
+                <pre><code>&lt;div class="container"&gt;
+  &lt;p&gt;Hello World&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                <p>Result / Resultado:</p>
+                <img src="https://via.placeholder.com/800x200.png?text=Div+Result" alt="Browser result of div tag" class="browser-result">
+                <br>
+                <a href="https://www.w3.org/TR/html52/grouping-content.html#the-div-element" title="External link to W3C HTML Specification" target="_blank">W3C Documentation (External)</a> | 
+                <a href="#" title="Download PDF Version" class="btn-pdf">Download PDF</a>
+            </div>
+        </section>
+
+        <section id="svg">
+            <h2>Scalable Vector Graphics (SVG)</h2>
+            <div id="svg-circle" class="example-box">
+                <h3>&lt;circle&gt; tag</h3>
+                <p><strong>Use Case:</strong> Drawing perfect circles / Dibujar círculos perfectos.</p>
+                <pre><code>&lt;svg width="100" height="100"&gt;
+  &lt;circle cx="50" cy="50" r="40" fill="red" /&gt;
+&lt;/svg&gt;</code></pre>
+                <img src="https://via.placeholder.com/100x100.png?text=SVG+Circle" alt="SVG Circle Result" class="browser-result">
+                <br>
+                <a href="https://www.w3.org/TR/SVG11/shapes.html#CircleElement" title="External link to W3C SVG Specification" target="_blank">W3C Documentation (External)</a> |
+                <a href="#" title="Download PDF Version" class="btn-pdf">Download PDF</a>
+            </div>
+        </section>
+
+        <section id="css">
+            <h2>CSS Properties / Propiedades CSS</h2>
+            <div id="css-flex" class="example-box">
+                <h3>Display: Flex</h3>
+                <p><strong>Use Case:</strong> Layout alignment / Alineación de diseños.</p>
+                <pre><code>.container {
+  display: flex;
+  justify-content: space-around;
+}</code></pre>
+                <img src="https://via.placeholder.com/800x200.png?text=Flexbox+Result" alt="CSS Flexbox Result" class="browser-result">
+                <br>
+                <a href="https://www.w3.org/TR/css-flexbox-1/" title="External link to W3C CSS Flexbox" target="_blank">W3C Documentation (External)</a> |
+                <a href="#" title="Download PDF Version" class="btn-pdf">Download PDF</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer style="text-align: center; padding: 20px; background: var(--dark); color: white;">
+        <p>&copy; 2025 Web4U - IES La Marisma - Bilingual Project</p>
+    </footer>
+
+</body>
+</html>
