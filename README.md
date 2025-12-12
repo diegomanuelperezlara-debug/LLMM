@@ -26,5 +26,12 @@
 | 1    | 19        | [Texto de enlace](ejercicio19.html) |
 | 1    | 20        | [Texto de enlace](ejercicio20.html) |
 | 1    | 21        | [Texto de enlace](ejercicio21.html) |
-| 1    | 22        | [Texto de enlace](ejercicio22.html) |
+| 1    | 22        | [Texto de enlace](Ejercicio22.html) |
+| 1    | 22        | [Texto de enlace](Ejercicio23.html) |
+| 1    | 22        | [Texto de enlace](Ejercicio24.html) |
+| 1    | 22        | [Texto de enlace](Ejercicio25.html) |
+| 1    | 22        | [Texto de enlace](Ejercicio26.html) |
+| 1    | 22        | [Texto de enlace](Ejercicio27.html) |
+| 1    | 22        | [Texto de enlace](Ejercicio28.html) |
+| 1    | 22        | [Texto de enlace](Ejercicio30.html) |
 
