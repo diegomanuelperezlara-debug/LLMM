@@ -1,4 +1,4 @@
-# LLMM
+ # LLMM
 
 
 ---
@@ -20,11 +20,11 @@
 | 1    | 13        | [Texto de enlace](ejercicio13.html) |
 | 1    | 14        | [Texto de enlace](ejercicio14.html) |
 | 1    | 15        | [Texto de enlace](ejercicio15.html) |
-| 1    | 16        | [Texto de enlace](ejercicio01.html) |
-| 1    | 17        | [Texto de enlace](ejercicio01.html) |
-| 1    | 18        | [Texto de enlace](ejercicio01.html) |
-| 1    | 19        | [Texto de enlace](ejercicio01.html) |
-| 1    | 20        | [Texto de enlace](ejercicio01.html) |
-| 1    | 21        | [Texto de enlace](ejercicio01.html) |
-| 1    | 22        | [Texto de enlace](ejercicio01.html) |
+| 1    | 16        | [Texto de enlace](ejercicio16.html) |
+| 1    | 17        | [Texto de enlace](ejercicio17.html) |
+| 1    | 18        | [Texto de enlace](ejercicio18.html) |
+| 1    | 19        | [Texto de enlace](ejercicio19.html) |
+| 1    | 20        | [Texto de enlace](ejercicio20.html) |
+| 1    | 21        | [Texto de enlace](ejercicio21.html) |
+| 1    | 22        | [Texto de enlace](ejercicio22.html) |
 
