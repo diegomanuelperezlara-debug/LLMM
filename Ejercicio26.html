@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 26 - Video</title>
+</head>
+<body>
+
+    <h1>Ejercicio 26 - Videos en HTML5</h1>
+
+    <h2>1. Ejemplo básico de video con controles</h2>
+
+    <video width="480" controls>
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+
+    <hr>
+
+    <h2>2. Ejemplo con botones personalizados</h2>
+
+    <video id="myVideo" width="480">
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+
+    <br><br>
+
+    <!-- Botones de control -->
+    <button onclick="playVideo()">Reproducir</button>
+    <button onclick="pauseVideo()">Pausar</button>
+    <button onclick="makeSmall()">Pequeño</button>
+    <button onclick="makeNormal()">Normal</button>
+    <button onclick="makeBig()">Grande</button>
+
+    <script>
+        let video = document.getElementById("myVideo");
+
+        function playVideo() {
+            video.play();
+        }
+
+        function pauseVideo() {
+            video.pause();
+        }
+
+        function makeSmall() {
+            video.width = 240;
+        }
+
+        function makeNormal() {
+            video.width = 480;
+        }
+
+        function makeBig() {
+            video.width = 720;
+        }
+    </script>
+
+</body>
+</html>

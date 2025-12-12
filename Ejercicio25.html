@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario + Acción en un solo archivo</title>
+</head>
+<body>
+
+<?php
+// Si NO se enviaron datos, mostramos el formulario
+if (!isset($_GET["uname"])) {
+?>
+    <h1>Formulario de login de usuario</h1>
+
+    <form method="get">
+        <label for="uname">Nombre usuario:</label>
+        <input type="text" id="uname" name="uname"><br><br>
+
+        <label for="pass">Clave:</label>
+        <input type="password" id="pass" name="pass"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+<?php
+// Si ya se enviaron datos, mostramos el resultado
+} else {
+?>
+    <h1>Datos recibidos</h1>
+
+    <p>Bienvenido, usuario:
+        <b><?php echo $_GET["uname"]; ?></b>
+    </p>
+
+    <p>Tu clave es:
+        <b><?php echo $_GET["pass"]; ?></b>
+    </p>
+
+    <br><a href="index.php">Volver al formulario</a>
+<?php
+}
+?>
+
+</body>
+</html>
