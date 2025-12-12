@@ -34,4 +34,4 @@
 | 1    | 27        | [Texto de enlace](Ejercicio27.html) |
 | 1    | 28        | [Texto de enlace](Ejercicio28.html) |
 | 1    | 30        | [Texto de enlace](Ejercicio30.html) |
-
+| 1    | trabajo trimestral | [Texto de enlace](trabajo trimestral.html) |
