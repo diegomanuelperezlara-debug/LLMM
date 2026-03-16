@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 7: onClick y CreateElement</title>
+    <style>
+        body { 
+            font-family: sans-serif; 
+            text-align: center; 
+            padding: 50px; 
+        }
+        #contenedor-imagen {
+            margin: 20px auto;
+            width: 300px;
+            height: 200px;
+            border: 2px dashed #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover { 
+            background-color: #45a049; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Generador de Imágenes Dinámico</h1>
+    <p>Haz clic en el botón para insertar una imagen.</p>
+
+    <button type="button" onclick="insertarImagen()">Mostrar Imagen</button>
+
+    <div id="contenedor-imagen">
+        <span id="mensaje-espera">Aquí aparecerá la imagen</span>
+    </div>
+
+    <script>
+        function insertarImagen() {
+            // 1. Seleccionamos el contenedor
+            const contenedor = document.getElementById("contenedor-imagen");
+
+            // 2. Creamos el elemento imagen
+            const nuevaImg = document.createElement("img");
+
+            // 3. Configuramos sus atributos (Uso una imagen de W3Schools)
+            nuevaImg.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+            nuevaImg.alt = "Bombilla encendida";
+            nuevaImg.style.width = "100px";
+
+            // 4. Limpiamos el contenido anterior y añadimos la imagen
+            contenedor.innerHTML = ""; 
+            contenedor.appendChild(nuevaImg);
+            
+            console.log("Imagen insertada correctamente.");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button onclick="agregarImagen()">Insertar Imagen</button>
+    <div id="contenedor" style="margin-top:20px; border:1px dashed #ccc; min-height:100px;"></div>
+
+    <script>
+        function agregarImagen() {
+            // Crear el elemento
+            const img = document.createElement("img");
+            // Configurar atributos
+            img.src = "https://www.w3schools.com/images/lamp.jpg";
+            img.alt = "Lámpara";
+            img.style.width = "100px";
+            
+            // Añadirlo al div (appendChild)
+            const div = document.getElementById("contenedor");
+            div.appendChild(img);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Prueba - Ejercicio 5</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .info { background: #f4f4f4; padding: 15px; border-radius: 5px; }
+        code { color: #d63384; }
+    </style>
+</head>
+<body>
+
+    <h1>Propiedades del Documento HTML</h1>
+    <p>Esta página contiene elementos que serán analizados por la consola.</p>
+
+    <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Chania" width="100">
+    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" width="100">
+
+    <p>
+        Visita <a href="https://www.w3schools.com">W3Schools</a> o 
+        revisa el <a href="https://www.mclibre.org">Mclibre</a>.
+    </p>
+
+    <div class="info">
+        <h3>Instrucciones:</h3>
+        <p>1. Abre las herramientas de desarrollador (F12 o Clic derecho -> Inspeccionar).</p>
+        <p>2. Haz clic en la pestaña <strong>Console</strong>.</p>
+        <p>3. Verás los resultados del script impresos allí.</p>
+    </div>
+
+    <script>
+        // Función para mostrar las propiedades en la consola
+        function mostrarPropiedades() {
+            console.log("--- PROPIEDADES DEL DOCUMENTO ---");
+            
+            // 1. Mostrar el título
+            console.log("Título: " + document.title);
+            
+            // 2. Mostrar las imágenes (colección document.images)
+            console.log("Cantidad de imágenes: " + document.images.length);
+            for (let i = 0; i < document.images.length; i++) {
+                console.log("Imagen " + (i+1) + " SRC: " + document.images[i].src);
+            }
+            
+            // 3. Mostrar los enlaces (colección document.links)
+            console.log("Cantidad de enlaces: " + document.links.length);
+            for (let i = 0; i < document.links.length; i++) {
+                console.log("Enlace " + (i+1) + " HREF: " + document.links[i].href);
+            }
+        }
+
+        // Ejecutamos la función
+        mostrarPropiedades();
+    </script>
+
+</body>
+</html>

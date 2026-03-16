@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1: Acceso al DOM</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        #contenedor-destino { 
+            border: 2px solid #2196F3; 
+            padding: 15px; 
+            margin-top: 20px; 
+            background-color: #e3f2fd;
+        }
+        .originales { color: #666; }
+    </style>
+</head>
+<body>
+
+    <h2>Párrafos Originales</h2>
+    <div class="originales">
+        <p>Este es el primer párrafo de ejemplo.</p>
+        <p>Aquí tenemos el segundo párrafo con algo más de información.</p>
+        <p>Y finalmente, el tercer párrafo que también será copiado.</p>
+    </div>
+
+    <button onclick="copiarContenido()">Mostrar contenido en el DIV</button>
+
+    <h2>Contenido extraído:</h2>
+    <div id="contenedor-destino">
+        <em>El contenido aparecerá aquí al pulsar el botón...</em>
+    </div>
+
+    <script>
+        function copiarContenido() {
+            // 1. Accedemos a todos los elementos <p> (devuelve una HTMLCollection)
+            const parrafos = document.getElementsByTagName("p");
+            
+            // 2. Accedemos al div donde queremos mostrar la información
+            const destino = document.getElementById("contenedor-destino");
+            
+            // Limpiamos el contenido previo del div
+            destino.innerHTML = "";
+
+            // 3. Recorremos la colección de párrafos
+            for (let i = 0; i < parrafos.length; i++) {
+                // Creamos un nuevo nodo de texto o usamos innerHTML
+                destino.innerHTML += "<strong>Párrafo " + (i + 1) + ":</strong> " 
+                                     + parrafos[i].innerText + "<br>";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2: Formulario y DOM</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 30px; }
+        .formulario-container { max-width: 400px; border: 1px solid #ccc; padding: 20px; border-radius: 8px; }
+        .campo { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input { width: 90%; padding: 8px; }
+        #mensaje-saludo { margin-top: 20px; font-weight: bold; color: #2e7d32; }
+    </style>
+</head>
+<body>
+
+    <div class="formulario-container">
+        <form name="registroUsuario" onsubmit="return procesarDatos(event)">
+            <div class="campo">
+                <label>Nombre:</label>
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="campo">
+                <label>Apellidos:</label>
+                <input type="text" name="apellidos" placeholder="Tus apellidos" required>
+            </div>
+            <button type="submit">Enviar datos</button>
+        </form>
+
+        <div id="mensaje-saludo"></div>
+    </div>
+
+    <script>
+        function procesarDatos(event) {
+            // Evitamos que el formulario se envíe realmente y recargue la página
+            event.preventDefault();
+
+            // 1. Accedemos al formulario usando la colección document.forms
+            // Usamos el 'name' que le pusimos en el HTML: "registroUsuario"
+            const formulario = document.forms["registroUsuario"];
+
+            // 2. Obtenemos los valores de los inputs usando sus atributos 'name'
+            const nombre = formulario["nombre"].value;
+            const apellidos = formulario["apellidos"].value;
+
+            // 3. Mostramos el mensaje en el div de destino
+            const salida = document.getElementById("mensaje-saludo");
+            salida.innerText = "Hola " + nombre + " " + apellidos + ", gracias por completar el formulario.";
+            
+            return false;
+        }
+    </script>
+
+</body>
+</html>

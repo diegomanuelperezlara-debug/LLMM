@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <ul id="miLista">
+        <li>Elemento A</li>
+        <li>Elemento B</li>
+        <li>Elemento C</li>
+    </ul>
+    <button onclick="borrarElemento()">Borrar primer item</button>
+
+    <script>
+        function borrarElemento() {
+            const lista = document.getElementById("miLista");
+            if (lista.hasChildNodes()) {
+                // removeChild requiere el nodo hijo específico
+                lista.removeChild(lista.childNodes[0]);
+            }
+        }
+    </script>
+</body>
+</html>
