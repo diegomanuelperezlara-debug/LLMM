@@ -41,4 +41,9 @@
 
 | 2    | trabajo trimestral | [Texto de enlace](practica2trimestre.html) |
 
+| TEMA | Ejercicio | Enlace |
+| ---- | --------- | ------ |
+| 2    | 1         | [Texto de enlace](ejercicio01.html) |
+
+
 
