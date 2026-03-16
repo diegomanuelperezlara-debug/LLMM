@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora el Cosmos - Proyecto Bootstrap</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* CSS3 PERSONALIZADO */
+        :root {
+            --espacial: #1a1a2e;
+            --neon: #00d4ff;
+        }
+
+        body {
+            background-color: var(--espacial);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Animación de entrada */
+        .fade-in-up {
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Transiciones en botones y enlaces */
+        .nav-link, .btn {
+            transition: all 0.4s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--neon) !important;
+            transform: scale(1.1);
+        }
+
+        /* Efecto para imágenes */
+        .img-hover:hover {
+            transform: scale(1.03);
+            filter: brightness(1.2);
+            transition: transform 0.5s;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        footer {
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top border-bottom border-info">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">🔭 COSMOS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#datos">Datos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#multimedia">Multimedia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container section-padding fade-in-up">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-3 fw-bold">El Universo en tus manos</h1>
+                <p class="lead">Explora las maravillas del espacio profundo. Desde nebulosas lejanas hasta nuestro propio sistema solar.</p>
+                <a href="#datos" class="btn btn-info btn-lg mt-3">Saber más</a>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=600" class="img-fluid rounded-circle shadow-lg img-hover" alt="Tierra desde el espacio">
+            </div>
+        </div>
+    </header>
+
+    <section id="galeria" class="container section-padding">
+        <h2 class="text-center mb-5">Vistas Galácticas</h2>
+        <div id="carouselExample" class="carousel slide shadow-lg" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1464802686167-b939a6910659?auto=format&fit=crop&w=1200&h=500" class="d-block w-100" alt="Galaxia">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=1200&h=500" class="d-block w-100" alt="Marte">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&h=500" class="d-block w-100" alt="Tecnología espacial">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <section id="datos" class="container section-padding">
+        <h2 class="mb-4">Estadísticas Planetarias</h2>
+        <div class="table-responsive">
+            <table class="table table-dark table-striped table-hover border-info">
+                <thead>
+                    <tr>
+                        <th>Cuerpo Celeste</th>
+                        <th>Diámetro (km)</th>
+                        <th>Gravedad (m/s²)</th>
+                        <th>Satélites</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tierra</td>
+                        <td>12,742</td>
+                        <td>9.8</td>
+                        <td>1 (La Luna)</td>
+                    </tr>
+                    <tr>
+                        <td>Júpiter</td>
+                        <td>139,820</td>
+                        <td>24.7</td>
+                        <td>79 conocidos</td>
+                    </tr>
+                    <tr>
+                        <td>Saturno</td>
+                        <td>116,460</td>
+                        <td>10.4</td>
+                        <td>82 conocidos</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="multimedia" class="bg-black py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Experiencia Inmersiva</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h4>Documental: El Vacío</h4>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/libKVRa01L8" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center d-flex flex-column justify-content-center">
+                    <h4>Sonidos del Viento Solar</h4>
+                    <p>Escucha la frecuencia captada por las sondas Voyager:</p>
+                    <audio controls class="w-100 mt-2">
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                        Tu navegador no soporta audio.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="container section-padding">
+        <div class="row justify-content-center">
+            <div class="col-md-6 bg-dark p-5 rounded shadow">
+                <h2 class="text-center mb-4">Únete a la Misión</h2>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nombre de Astronauta</label>
+                        <input type="text" class="form-control bg-secondary text-white border-0" placeholder="Ej: Neil Armstrong">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control bg-secondary text-white border-0" placeholder="nombre@espacio.com">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Mensaje para la base</label>
+                        <textarea class="form-control bg-secondary text-white border-0" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-info w-100">Enviar Señal</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4">
+        <p class="mb-0 text-secondary small">Tarea CSS3/Bootstrap - 2026 | <a href="index.html" class="text-info text-decoration-none">Volver al Inicio</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
