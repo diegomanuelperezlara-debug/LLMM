@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego: Lights Out</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; background-color: #222; color: white; }
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(3, 100px); 
+            gap: 10px; 
+            justify-content: center; 
+            margin-top: 20px; 
+        }
+        .light { 
+            width: 100px; 
+            height: 100px; 
+            background-color: #555; /* Apagado */
+            border-radius: 10px; 
+            cursor: pointer; 
+        }
+        .on { 
+            background-color: #ffeb3b; /* Encendido */
+            box-shadow: 0 0 20px #ffeb3b; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lights Out (3x3)</h1>
+    <p>¡Apaga todas las luces!</p>
+
+    <div class="grid" id="tablero">
+        </div>
+
+    <script>
+        const tablero = document.getElementById("tablero");
+        const luces = [];
+
+        // 1. Crear el tablero de 3x3
+        for (let i = 0; i < 9; i++) {
+            const div = document.createElement("div");
+            div.className = "light on"; // Todas empiezan encendidas
+            div.onclick = () => alternar(i);
+            tablero.appendChild(div);
+            luces.push(div);
+        }
+
+        // 2. Lógica del juego: cambiar estado de la celda y sus vecinas
+        function alternar(index) {
+            cambiarEstado(index); // La propia celda
+            
+            // Vecinos (Arriba, Abajo, Izquierda, Derecha)
+            if (index >= 3) cambiarEstado(index - 3); // Arriba
+            if (index < 6) cambiarEstado(index + 3);  // Abajo
+            if (index % 3 !== 0) cambiarEstado(index - 1); // Izquierda
+            if (index % 3 !== 2) cambiarEstado(index + 1); // Derecha
+            
+            verificarVictoria();
+        }
+
+        function cambiarEstado(i) {
+            luces[i].classList.toggle("on");
+        }
+
+        function verificarVictoria() {
+            const encendidas = document.querySelectorAll(".on").length;
+            if (encendidas === 0) {
+                setTimeout(() => alert("¡Ganaste! Has apagado todas las luces."), 100);
+            }
+        }
+    </script>
+</body>
+</html>
