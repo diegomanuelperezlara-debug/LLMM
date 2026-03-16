@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 9: Control de Tiempo</title>
+</head>
+<body>
+    <h1>Temporizador de 5 segundos</h1>
+    <p>El mensaje aparecerá en 5 segundos a menos que pulses el botón.</p>
+    
+    <button onclick="detenerAlerta()">Detener Alerta</button>
+
+    <script>
+        // Guardamos el setTimeout en una variable
+        const miTemporizador = setTimeout(function() {
+            alert("¡Han pasado 5 segundos!");
+        }, 5000);
+
+        function detenerAlerta() {
+            // Cancelamos la ejecución usando la variable
+            clearTimeout(miTemporizador);
+            alert("Temporizador detenido. Ya no aparecerá el mensaje.");
+        }
+    </script>
+</body>
+</html>
