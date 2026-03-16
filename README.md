@@ -35,3 +35,10 @@
 | 1    | 28        | [Texto de enlace](Ejercicio28.html) |
 | 1    | 30        | [Texto de enlace](Ejercicio30.html) |
 | 1    | trabajo trimestral | [Texto de enlace](trabajotrimestral.html) |
+
+
+#trabajotrimestral 2
+
+| 2    | trabajo trimestral | [Texto de enlace](practica2trimestre.html) |
+
+
