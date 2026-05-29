@@ -41,9 +41,18 @@
 
 | 2    | trabajo trimestral | [Texto de enlace](practica2trimestre.html) |
 
-| TEMA | Ejercicio | Enlace |
+| TEMA | Ejercicio dom | Enlace |
 | ---- | --------- | ------ |
-| 2    | 1         | [Texto de enlace]() |
+| 2    | 1         | [Texto de enlace](ejercicio1.html) |
+| 2    | 2         | [Texto de enlace](ejercicio2.html) |
+| 2    | 3         | [Texto de enlace](ejercicio3.html) |
+| 2    | 4         | [Texto de enlace](ejercicio4.html) |
+| 2    | 5         | [Texto de enlace](ejercicio5.html) |
+| 2    | 6         | [Texto de enlace](ejercicio6.html) |
+| 2    | 7         | [Texto de enlace](ejercicio7.html) |
+| 2    | 8         | [Texto de enlace](ejercicio8.html) |
+| 2    | 9         | [Texto de enlace](ejercicio9.html) |
+| 2    | 10         | [Texto de enlace](ejercicio10.html) |
 
 
 
