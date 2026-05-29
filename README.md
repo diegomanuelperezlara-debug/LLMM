@@ -43,7 +43,7 @@
 
 | TEMA | Ejercicio | Enlace |
 | ---- | --------- | ------ |
-| 2    | 1         | [Texto de enlace](ejercicio01.html) |
+| 2    | 1         | [Texto de enlace]() |
 
 
 
