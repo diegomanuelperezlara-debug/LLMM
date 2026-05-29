@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 3 - Car Images</title>
+    <script>
+        // Función que se ejecuta cuando cambia la selección del desplegable
+        function cambiaCoche() {
+            // 1. Obtenemos el elemento select por su ID
+            var lista = document.getElementById("selectorCoches");
+            
+            // 2. Extraemos el valor de la opción seleccionada (la ruta de la imagen)
+            var imagenSeleccionada = lista.value;
+            
+            // 3. Cambiamos el atributo 'src' de la imagen en pantalla
+            document.getElementById("miImagen").src = imagenSeleccionada;
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Imágenes de coches</h2>
+    
+    <p>Ejemplo de JavaScript en el que cambiamos las imágenes mostradas al seleccionar una opción del desplegable:</p>
+
+    <select id="selectorCoches" onchange="cambiaCoche()">
+        <option value="coche1.jpg">Coche 1</option>
+        <option value="coche2.jpg">Coche 2</option>
+        <option value="coche3.jpg">Coche 3</option>
+    </select>
+    
+    <br><br>
+
+    <img id="miImagen" src="coche1.jpg" style="height:300px;">
+
+</body>
+</html>
