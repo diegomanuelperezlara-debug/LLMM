@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 5 - Basics</title>
+    <script>
+        // --- GRUPO A: Cambiar estilos de fuente del párrafo ---
+        function cambiarFuente(estilo) {
+            document.getElementById("textoEstilo").style.fontFamily = estilo;
+        }
+
+        // --- GRUPO B: Cambiar el atributo src de la imagen ---
+        function cambiarImagen(rutaImagen) {
+            document.getElementById("miImagen").src = rutaImagen;
+        }
+
+        // --- GRUPO C: Mostrar mensajes diferentes en un <div> ---
+        function mostrarMensaje(texto) {
+            document.getElementById("contenedorMensaje").innerHTML = texto;
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Exercise 5: JavaScript Basics</h1>
+    <hr>
+
+    <h3>a. Changing the style of a paragraph</h3>
+    <p id="textoEstilo" style="font-size: 20px;">Este es el párrafo de prueba para cambiar su fuente.</p>
+    
+    <button type="button" onclick="cambiarFuente('Arial')">Arial</button>
+    <button type="button" onclick="cambiarFuente('Courier New')">Courier New</button>
+    <button type="button" onclick="cambiarFuente('Times New Roman')">Times New Roman</button>
+
+    <br><br><hr>
+
+    <h3>b. Changing the attribute src from the img tag</h3>
+    <img id="miImagen" src="imagen1.jpg" alt="Imagen de prueba" style="height: 200px; display: block; margin-bottom: 10px;">
+    
+    <button type="button" onclick="cambiarImagen('imagen1.jpg')">Ver Imagen 1</button>
+    <button type="button" onclick="cambiarImagen('imagen2.jpg')">Ver Imagen 2</button>
+    <button type="button" onclick="cambiarImagen('imagen3.jpg')">Ver Imagen 3</button>
+
+    <br><br><hr>
+
+    <h3>c. Showing three different messages in a &lt;div&gt; tag</h3>
+    <div id="contenedorMensaje" style="padding: 15px; background-color: #f0f0f0; border: 1px solid #ccc; width: 300px; margin-bottom: 10px;">
+        Selecciona un botón para cargar un mensaje aquí.
+    </div>
+    
+    <button type="button" onclick="mostrarMensaje('¡Hola! Este es el Mensaje A.')">Mensaje A</button>
+    <button type="button" onclick="mostrarMensaje('¿Qué tal? Aquí tienes el Mensaje B.')">Mensaje B</button>
+    <button type="button" onclick="mostrarMensaje('Fin del ejercicio. Este es el Mensaje C.')">Mensaje C</button>
+
+</body>
+</html>
