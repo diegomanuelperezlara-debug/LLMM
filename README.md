@@ -39,7 +39,7 @@
 
 #trabajotrimestral 2
 
-| 2    | trabajo trimestral | [Texto de enlace](practica2trimestre.html) |
+| 2    | trabajo trimestral | [Texto de enlace](https://github.com/diegomanuelperezlara-debug/LLMM/practica2trimestre.html) |
 
 | TEMA | Ejercicio dom | Enlace |
 | ---- | --------- | ------ |
