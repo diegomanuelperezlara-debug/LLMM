@@ -85,7 +85,7 @@
 
 
 
-| TEMA | Ejercicio dtd | Enlace |
+| TEMA | Ejercicio xsd | Enlace |
 | ---- | --------- | ------ |
 | 5    | 1         | [Texto de enlace](ejercicio1xsd.html) |
 | 5    | 2         | [Texto de enlace](ejercicio2xsd.html) |
@@ -93,13 +93,13 @@
 
 
 
-| TEMA | Ejercicio dtd | Enlace |
+| TEMA | Ejercicio xslt | Enlace |
 | ---- | --------- | ------ |
 | 5    | 1         | [Texto de enlace](ejercicio1xlst.html) |
 
 
 
-| TEMA | Ejercicio dtd | Enlace |
+| TEMA | Ejercicio rss | Enlace |
 | ---- | --------- | ------ |
 | 5    | 1         | [Texto de enlace](ejercicio1rss.html) |
 
