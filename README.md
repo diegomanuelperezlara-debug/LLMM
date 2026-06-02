@@ -105,3 +105,15 @@
 
 
 
+#trabajotrimestral 3
+
+| 5    | trabajo trimestral | [Texto de enlace](https://github.com/diegomanuelperezlara-debug/LLMM/practicalenguaje3trimestre/index.html) |
+
+
+
+
+
+
+
+
+
